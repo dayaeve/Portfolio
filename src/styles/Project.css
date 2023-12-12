@@ -1,0 +1,160 @@
+.project {
+    width: 100%;
+    height: 100vh;
+}
+.project__div {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    justify-items: center;
+    align-items: center;
+}
+.project__img {
+    height: 230px;
+    width: 230px;
+    object-fit: cover;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: scale(100%);
+    transition: tranform 0.5s;
+    animation: jello-horizontal 0.9s both;
+}
+.project__img:hover {
+    transition: transform 0.3s;
+    border: solid 4px beige;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.project__img>img {
+    width: 200px;
+    height: 250px;
+}
+.caja:hover.project__img {
+    transform: scale(105%);
+}
+.project__h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1.5em;
+    font-family: 'Brittany Signature', sans-serif;
+    color: white;
+}
+.project__h2 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 0.6em;
+    color: white;
+}
+.caja {
+   
+    text-align: center;
+    position: relative;
+}
+
+.project__p {
+    color: inherit;
+    font-size: 0.5em;
+    font-weight: 700;
+    text-align: center;
+    bottom: 2em;
+    font-family: var(--secondFont);
+}
+.div_caja_odd {
+    position: absolute;
+    top: 3.3em;
+    left: 0.3em;
+    bottom: 0.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 40px;
+    color: transparent;
+    transition: background-color 0.5s, color 0.5s;
+    background-color: transparent;
+    width: 90%;
+    height: 40%;
+    border-radius: 5%;
+}
+
+.div_caja_odd:hover {
+    background-color: rgba(245, 245, 220, 0.452);
+    color: black;
+}
+
+@keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  @media screen and (max-width:814px){
+    .project__div {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .project__img {
+        height: 190px;
+        width: 190px;
+    }
+  }
+  @media screen and (max-width:420px){
+    .project__div {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    .project__img {
+        height: 120px;
+        width: 120px;
+    }
+    .div_caja_odd {
+        position: absolute;
+        top: 3.3em;
+        left: 0.3em;
+        bottom: 0.4em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 40px;
+        color: transparent;
+        transition: background-color 0.5s, color 0.5s;
+        background-color: transparent;
+        width: 90%;
+        height: 40%;
+        border-radius: 5%;
+    
+    }
+}
+  

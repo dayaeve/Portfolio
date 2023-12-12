@@ -1,0 +1,45 @@
+:root {
+    --firstFont: "acorn", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    --secondFont: "gt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    --Font: Baskerville,"Goudy Old Style", Palatino, "Book Antiqua", serif;
+    --generalFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    --publicFont: ui-monospace, Menlo, Monaco,"Cascadia Mono", "Segoe UI Mono", "Roboto Mono", monospace;
+    --letterFont: 'Allura', cursive;
+}
+
+
+/* ----RESET---- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url(../public/background.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+   
+  
+    
+}
+h1, h2, h3, h4, p, ul, hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+input, button {
+    font-family: inherit;
+}
+img {
+    display: block;
+    width: 100%;
+}
+button {
+    cursor: pointer;
+}

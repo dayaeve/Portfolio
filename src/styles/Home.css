@@ -1,0 +1,63 @@
+.homecontainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    flex-direction: row-reverse;
+    gap: 6rem;  
+}
+.home__video {
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+   
+}
+.home__info {
+
+color: white;
+
+}
+.home__h2 {
+    font-family: 'Brittany Signature', sans-serif;
+    font-weight: 100;
+    font-size: 4rem;
+}
+.home__h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6rem;
+}
+.home__p {
+    font-size: 4rem;
+    font-family: var(--generalFont);
+}
+.home__app {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    padding-top: 0.7em;
+}
+.home__logo {
+    font-size: 3rem;
+    color:rgb(99, 73, 41);
+}
+
+@media screen and (max-width:563px){
+    .homecontainer {
+        height: 100%;
+          
+    }
+    .home__video {
+        width: 100%;
+        min-width: 200px;       
+    }
+    .home__h3 {
+        font-size: 4rem;
+    }
+    .home__p {
+        font-size: 2rem;
+    }
+
+}
+
