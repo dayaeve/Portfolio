@@ -45,7 +45,7 @@ const Contact = () => {
             whileInView={{opacity:0}} 
             transition={{ delay:2, duration: 1}}>
 
-                <svg width='400px' height='400px'fill="#33333" viewBox="0 0 512 512" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="call-phone-heart-love-valentine">
+                <svg className='phone'fill="#33333" viewBox="0 0 512 512" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="call-phone-heart-love-valentine">
                      <motion.path
                      strokeWidth={0.2}
                      fill='rgba(97, 73, 44, 0.726)'

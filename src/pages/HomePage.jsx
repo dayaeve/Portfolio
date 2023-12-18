@@ -1,12 +1,11 @@
 import React from 'react'
-import video from '../../public/LetterLogo.mp4'
 import '../styles/Home.css'
 
 const HomePage = () => {
   return (
     <div className='homecontainer'>
       <div className='home__div'>
-        <video className='home__video' src={video} autoPlay loop muted />
+        <img className='home__video' src='../../DayanaD.png' alt=''/>
       </div>
       <div className='home__info'>
         <h2 className='home__h2' >Hello</h2>

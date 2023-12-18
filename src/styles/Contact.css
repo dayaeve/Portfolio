@@ -1,6 +1,8 @@
 .contact {
-    height: 100vh;
-    max-width: 1050px;
+    flex: 1;
+    width: 100%;
+    max-width: 1390px;
+    padding: 15em;
     margin: auto;
     display: flex;
     align-items: center;
@@ -42,10 +44,13 @@
 }
 
 .formContainer {
-    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 
     .phoneSvg {
+        flex: 1;
         stroke: white;
         position: absolute;
         margin: auto;
@@ -90,11 +95,17 @@
         background-color: rgba(97, 73, 44, 0.192);
         font-family: 'Poppins', sans-serif;
     }
+
+    .phone {
+        width: 300px;
+        height: 300px;
+    }
 }
 
-@media screen and (max-width:1071px) {
+@media screen and (max-width:1060px) {
 
     .contact {
+        padding: 10em;
         display: flex;
         flex-direction: column;
     }
@@ -130,62 +141,7 @@
     }
 }
 
-@media screen and (max-width:485px) {
+@media screen and (max-width:478px) {
 
-        .contact {
-            display: flex;
-            flex-direction: column;
-        }
-        .textContainer {
-            h2 {
-                margin-top: 0.6em;
-                font-size: 80px;
-            }
-    
-            h1 {
-                font-size: 25px;
-            }
-        }
-        .formContainer {
-            form {
-                gap: 30px;    
-            }
-            input {
-                padding: 10px;
-            }
-            
-        }
-        
-    }
-
-
-    @media screen and (max-width:457px) {
-
-        .contact {
-            display: flex;
-            flex-direction: column;
-        }
-        .textContainer {
-            h2 {
-                margin-top: 0.6em;
-                font-size: 80px;
-            }
-    
-            h1 {
-                font-size: 25px;
-            }
-        }
-        .formContainer {
-            form {
-                gap: 30px;    
-            }
-            input {
-                padding: 10px;
-            }
-            
-        }
-        
-    }
-    
-    
-
+}
+       

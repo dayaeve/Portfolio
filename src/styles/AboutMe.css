@@ -47,6 +47,13 @@
     }
     }
 
+    @media screen and (max-width:375px){
+        .about__container {
+            height: 100%;
+        
+    }
+}
+
     @media screen and (max-width:280px){
         .about__container {
             height: 100%;
