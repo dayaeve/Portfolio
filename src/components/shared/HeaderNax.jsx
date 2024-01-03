@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import '../../styles/HeaderNav.css'
-import menu from '../../../public/menu.png'
 import { useState } from "react"
 
 
