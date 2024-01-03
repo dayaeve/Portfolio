@@ -57,8 +57,9 @@
     border-radius: 1rem ;
 }
 .listItem {
-    font-weight: 700;
-    font-size: 1.5rem;
+    font-family: var(--generalFont);
+    font-weight: 300;
+    font-size: 1.3rem;
     text-decoration: none;
     color: white;
     padding: 0.5rem 3rem;
